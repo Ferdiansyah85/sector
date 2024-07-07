@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<table border="0" cellspacing="0" cellpadding="5">
+<form action="">
+        <tr>
+            <td style="text-align: right;"><label for="username">Username : </label></td>
+            <td><input type="text" name="username" id="username"></td>
+        </tr>
+        <br>
+        <tr>
+    <td style="text-align: right;"><label for="password"> Password : </label></td>
+    <td><input type="password" id="password"></td>
+        </tr>
+        <br>
+        <tr>
+        <td style="text-align: right;"><label for="alamat">alamat : </label></td>
+        <td><textarea>Alamat</textarea></td>
+        </tr>
+        <br>
+    <tr>
+    <!-- radio button name untuk memilih salah 1  -->
+    <td colspan="2" style="text-align: center;"<label for="pria">Pria</label>
+    <input type="radio" name="jkel" id="pria">
+    <label for="wanita">Wanita</label>
+    <input type="radio" name="jkel" id="wanita">
+    </td>
+    </tr>
+        <br>
+    <tr>
+        <td colspan="2" style="text-align: center;">
+    <label for="maen bola">maen bola</label>
+    <input type="checkbox" name="maen bola" id="maen bola">
+    <label for="nyanyi">nyanyi</label>
+    <input type="checkbox" name="nyanyi" id="nyanyi">
+        </td>
+    </tr>    
+    <br>
+    <!-- combo box -->
+    <tr>
+        <td style="text-align: right;"><label for="kota">kota :</label></td>
+        <td><select>
+        <option value="">pilih</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="tenabang">Depok</option>
+        <option value="tenabang">Tenabang</option>
+    </select></td>
+    </tr>
+    <br>
+    <tr>
+    <td colspan="2" style="text-align: center;">
+    <button type="submit">kirim</button>
+    </td>
+    </tr>
+</form>
+</table>
+</body>
+</html>
