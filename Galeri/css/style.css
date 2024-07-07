@@ -1,0 +1,177 @@
+/* Font */
+@font-face {
+    font-family: BebaNeue;
+    src: url(../font/BebasNeue-Regular.woff) format('woff');
+}
+
+/*  Style Utama */
+body {
+    font: 18px/36px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    background-color: silver;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 50px auto;
+    text-align: center;
+    color:red;
+	text-shadow: 0 0 20px black;
+}
+
+.container {
+    width: 600px;
+    background-color:black;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0,.3);
+    border-radius: 5px;
+}
+
+.galeri li {
+    width: 120px;
+    height: 120px;
+    /* overflow: hidden; */
+    border: 5px solid red;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.galeri li,
+.galeri li a img,
+.galeri li span {
+    border-radius: 50%;
+}
+
+.galeri li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200,200,.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: red;
+    text-shadow: 0 0 20px red;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: .3s;
+}
+
+.galeri li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .8);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 0 0 1px 1px red;
+
+}
+
+.overlay:target img {
+    animation: fade .8s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    text-decoration: none;
+    background-color: black;
+    color:red;
+    border: 1px solid silver;
+    line-height: 14px;
+    padding: 2px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDanfade .5s .5s forwards;
+}
+.overlay:target .next,
+.overlay:target .prev {
+    animation: fade .5s .5s forwards;
+}
+
+/* Navigasi */
+.next, .prev {
+    width: 47px;
+    height: 31px;
+    background-image: url(../img/kanan.jpg) ;
+    position: absolute;
+    text-indent:  -99999px;
+    top: 50%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/kiri.jpg);
+    margin-left: -90px;
+}
+
+
+/* animation */
+@keyframes zoomDanfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes slideDanfade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
