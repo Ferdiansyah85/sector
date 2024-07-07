@@ -1,0 +1,95 @@
+/* Mengatur body sebagai kontainer flex */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pastikan body memenuhi seluruh tinggi viewport */
+    margin: 0;
+    background-color: #a9a9a9 !important;
+}
+
+/* Kontainer utama untuk menyesuaikan flex */
+.container-fluid.mt-5.table-container {
+    flex: 1;
+}
+
+/* Footer tetap di bagian bawah */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: 65px; /* Tinggi tetap footer */
+    box-sizing: border-box; /* Pastikan padding termasuk dalam tinggi footer */
+    display: flex;
+    align-items: center; /* Menyelaraskan konten di tengah vertikal */
+    justify-content: center; /* Menyelaraskan konten di tengah horizontal */
+}
+
+/* daftar kegiatan */
+.icon-text-container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.icon-text-container i {
+    font-size: 3rem; /* Sesuaikan ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    color: rgb(0, 0, 0); /* Warna ikon */
+}
+
+/* Mengurangi tinggi tabel */
+.table-container table {
+    width: 100%; /* Sesuaikan dengan kebutuhan */
+    margin: 0 auto; /* Memusatkan tabel */
+    font-size: 0.875rem; /* Mengurangi ukuran font */
+}
+
+.table-container table th,
+.table-container table td {
+    padding: 0.25rem; /* Mengurangi padding */
+    text-align: center; /* Menengahkan teks */
+}
+
+/* Mengatur ulang margin dan padding untuk sel tabel */
+.table-container table th,
+.table-container table td {
+    padding: 0.25rem; /* Mengurangi padding */
+}
+
+/* Mengatur ukuran font ikon */
+.table-container .icon-text-container i {
+    font-size: 2rem; /* Mengurangi ukuran ikon */
+    margin-right: 5px; /* Mengurangi jarak antara ikon dan teks */
+}
+
+.footer .bi-facebook,
+.footer .bi-instagram,
+.footer .bi-whatsapp {
+    font-size: 1.5rem; /* Ukuran font ikon */
+    margin: 0 10px; /* Jarak antar ikon */
+    line-height: 1; /* Tinggi baris ikon */
+}
+
+/* Pastikan ikon tidak mengubah tinggi footer */
+.footer .icon {
+    display: flex;
+    align-items: center; /* Menyelaraskan ikon di tengah vertikal */
+    height: 100%; /* Pastikan tinggi ikon sesuai dengan tinggi footer */
+}
+
+.footer .bi-facebook {
+    color: #3b5998; /* Warna biru Facebook */
+}
+
+.footer .bi-instagram {
+    color: #e4405f; /* Warna merah Instagram */
+}
+
+.footer .bi-whatsapp {
+    color: #25d366; /* Warna hijau WhatsApp */
+}

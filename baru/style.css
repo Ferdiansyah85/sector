@@ -1,0 +1,72 @@
+body {
+    background-color: #a9a9a9 !important;
+    margin-bottom: 80px; /* Atur margin bawah pada body untuk memberikan ruang bagi footer */
+}
+
+.col-md-8 .card-body {
+    background-color: #a8a8a8; /* Warna abu-abu */
+}
+.col-md-4 .card-body {
+    background-color: #c1c1c1; /* Warna abu-abu */
+}
+
+.custom-carousel {
+    height: 80vh;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption h3 {
+    color: rgb(255, 255, 255); /* Warna hitam */
+}
+
+
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px; /* Sesuaikan dengan tinggi konten */
+    opacity: 0; /* Sembunyikan elemen secara default */
+    transition: opacity 3s ease; /* Efek transisi saat muncul */
+}
+
+.footer .bi-facebook,
+.footer .bi-instagram,
+.footer .bi-whatsapp {
+    font-size: 1.5rem; /* Ukuran font ikon */
+    margin: 0 10px; /* Jarak antar ikon */
+    line-height: 1; /* Tinggi baris ikon */
+}
+
+/* Pastikan ikon tidak mengubah tinggi footer */
+.footer .icon {
+    display: flex;
+    align-items: center; /* Menyelaraskan ikon di tengah vertikal */
+    height: 100%; /* Pastikan tinggi ikon sesuai dengan tinggi footer */
+}
+
+.footer .bi-facebook {
+    color: #3b5998; /* Warna biru Facebook */
+}
+
+.footer .bi-instagram {
+    color: #e4405f; /* Warna merah Instagram */
+}
+
+.footer .bi-whatsapp {
+    color: #25d366; /* Warna hijau WhatsApp */
+}
