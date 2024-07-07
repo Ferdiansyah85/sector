@@ -1,0 +1,21 @@
+h1 {
+    /* fons style untuk  italic/miring dan jika tidak ada akan jadi oblique */
+    /* font-style: italic; */
+    /* untuk menubah tulisan kecil menjadi huruf besar semua */
+    /* font-variant: small-caps; */
+    /* font weigh untuk bold */
+    /* font-weight: bold; */
+    /* font-size: 100px; */
+    /* line-height: 50px; */
+    /* font family yg pertama yg paling dicari */
+    /* font-family: 'Courier New', Courier, monospace; */
+    font: italic small-caps bold 100px/50px 'Courier New', Courier, monospace;
+    color: aqua;
+}
+
+p {
+    /* font weigh untuk bold */
+    font-weight: bold;
+    /* line height untuk mengatur jarak antar baris */
+    line-height: 100px;
+}
