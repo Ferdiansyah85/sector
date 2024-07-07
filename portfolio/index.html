@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#home" class="navbar-brand page-scroll">Fredi</a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" class="page-scroll">About</a></li>
+                    <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+                    <li><a href="#contact" class="page-scroll">Contact</a></li>
+                </ul>
+            </div>
+        
+        </div>
+    </nav>
+    <!-- akhir Navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+        <img src="img/1.tb.jpeg" class="img-circle">
+        <h1>fredi</h1>
+        <p>Pedagang | Atlet</p>
+    </div>
+    <!-- akhir jumbroton -->
+
+
+
+    <!-- about pakai section  untuk membagi bagi sesi dan grid sistem untuk membuat kolom kolom menjadi rapi baca di web boostrapnya untuk lebih lanjut -->
+    <section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">About</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1">
+                <p class="pKiri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias fugit, saepe nesciunt totam facere numquam vel, aperiam blanditiis deleniti voluptatibus, itaque commodi fugiat velit enim non pariatur sapiente distinctio.</p>
+            </div>
+            <div class="col-sm-5">
+                <p class="pKanan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem maxime dignissimos impedit assumenda repellat eveniet architecto rem facilis voluptatibus suscipit dicta ipsa, et itaque unde explicabo at eaque molestias sed!</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- akhir about -->
+
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="" class="thumbnail">
+                        <img src="img/portfolio/1.fs.jpeg">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="thumbnail">
+                        <img src="img/portfolio/2.fs.jpeg">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="thumbnail">
+                        <img src="img/portfolio/3.fs.jpeg">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="thumbnail">
+                        <img src="img/portfolio/3.fs.jpeg">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="thumbnail">
+                        <img src="img/portfolio/1.fs.jpeg">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="thumbnail">
+                        <img src="img/portfolio/2.fs.jpeg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir portfolio -->
+
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>contact</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <form action="">
+                        <div class="form-grup">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Masukan nama">
+                        </div>
+                        <div class="form-grup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Masukan email">
+                        </div>
+                        <div class="form-grup">
+                            <label for="telp">No Telepon</label>
+                            <input type="tel" id="telp" class="form-control" placeholder="Masukan no telepon">
+                        </div>
+                        <br>
+                        <select class="form-control">
+                            <option>-- Pilih kategori --</option>
+                            <option>Atlet</option>
+                            <option>Pedagang</option>
+                        </select>
+                        <div class="form-grup">
+                            <label for="pesan">pesan</label>
+                        <textarea class="form-control" rows="3" placeholder="Masukna pesan"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn-primary">Kirim pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir contact -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>&copy; 2023 | built with <i class="glyphicon glyphicon-heart"></i> <a href="http://prabujabu.com">Prabujabu</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="http://prabujabu.com" class="btn btn-danger"> <i class="glyphicon glyphicon-play"></i> Subscribe prabu jabu</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
